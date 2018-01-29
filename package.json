@@ -1,9 +1,13 @@
 {
-  "name": "keirekisyo",
+  "name": "keirekisyo-generator",
   "version": "0.0.1",
   "description": "keirekisyo genereator",
-  "main": "main.js",
+  "main": "main.mjs",
+  "engines": {
+    "node": ">=9.4.0"
+  },
   "scripts": {
+    "main": "node --experimental-modules main.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,5 +16,8 @@
     "generator"
   ],
   "author": "mattak",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "html-pdf": "^2.2.0"
+  }
 }
