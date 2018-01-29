@@ -23,3 +23,4 @@ pdf.create(html, options)
     console.log(res);
   });
 
+console.log("output: %s", outfile);
