@@ -12,10 +12,25 @@ if (!process.argv[2].match(/\.html$/)) {
 }
 
 var infile  = process.argv[2];
-var outfile = (process.argv.length > 3) ? process.argv[3] : infile.replace(/\.html$/,".pdf");
-
+var outfile = (process.argv.length > 3) ? process.argv[3] : infile.replace(/\.html$/,".pdf"); 
 var html = fs.readFileSync(infile, 'utf8');
-var options = { format: 'Letter' };
+var options = {
+  format: 'A4',
+  "header": {
+    "height": "14mm",
+  },
+  "footer": {
+    "height": "18mm",
+    "contents": {
+      default: '<div style="color: #444;text-align: center">{{page}}</div>',
+      // TODO: Fix to remove specific number. Not working now without following hack.
+      1: '<div style="color: #444;text-align: center">{{page}}</div>',
+      2: '<div style="color: #444;text-align: center">{{page}}</div>',
+      3: '<div style="color: #444;text-align: center">{{page}}</div>',
+      last: '<div style="text-align: center">Powered by <a href="https://github.com/mattak/keireki_generator">keireki generator</a></div>'
+    },
+  },
+};
 
 pdf.create(html, options)
   .toFile(outfile, (err, res) => {
