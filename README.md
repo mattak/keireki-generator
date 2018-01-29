@@ -2,16 +2,16 @@
 
 ## Usage
 
-Convert from markdown to html.
+(1) Create markdown file
+(2) Convert from markdown to html
 
 ```shell-session
 $ npm run html resume.md resume.html
 ```
 
-Convert from html to pdf.
+(3) Convert from html to pdf
 
 ```shell-session
 $ npm run pdf resume.html resume.pdf
 ```
-
 
