@@ -7,10 +7,12 @@
     "node": ">=9.4.0"
   },
   "scripts": {
-    "main": "node --experimental-modules main.mjs",
+    "html": "node --experimental-modules htmlify.mjs",
+    "pdf": "node --experimental-modules pdfy.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
+    "markdown",
     "pdf",
     "html",
     "generator"
@@ -18,6 +20,8 @@
   "author": "mattak",
   "license": "MIT",
   "dependencies": {
-    "html-pdf": "^2.2.0"
+    "html-pdf": "^2.2.0",
+    "mustache": "^2.3.0",
+    "showdown": "^1.8.6"
   }
 }
