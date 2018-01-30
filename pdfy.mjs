@@ -20,14 +20,13 @@ var options = {
     "height": "14mm",
   },
   "footer": {
-    "height": "18mm",
+    "height": "20mm",
     "contents": {
       default: '<div style="color: #444;text-align: center">{{page}}</div>',
       // TODO: Fix to remove specific number. Not working now without following hack.
-      1: '<div style="color: #444;text-align: center">{{page}}</div>',
-      2: '<div style="color: #444;text-align: center">{{page}}</div>',
-      3: '<div style="color: #444;text-align: center">{{page}}</div>',
-      last: '<div style="text-align: center">Powered by <a href="https://github.com/mattak/keireki_generator">keireki generator</a></div>'
+      1: '<div style="padding-top: 16px; text-align: center">{{page}}</div>',
+      2: '<div style="padding-top: 8px; text-align: center">{{page}}</div>',
+      last: '<div style="padding-top 8px; text-align: center">Powered by <a href="https://github.com/mattak/keireki-generator">keireki generator</a></div>'
     },
   },
 };
