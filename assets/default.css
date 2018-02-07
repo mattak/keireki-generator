@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    color: #333;
 }
 
 div#wrapper {
@@ -8,33 +9,35 @@ div#wrapper {
 
 div#wrapper > h1 {
     font-size: 24px;
+    font-weight: bold;
     margin: 0;
-    padding: 8px 0;
+    padding: 16px 0 0;
 }
 
 div#wrapper > h2 {
     font-size: 20px;
+    font-weight: bold;
     margin: 0;
-    padding: 4px 0;
+    padding: 16px 0 0 0;
 }
 
 div#wrapper > h3 {
     font-size: 16px;
     margin: 0;
-    padding: 2px 0;
+    padding: 12px 0 0 0;
+}
+
+div#wrapper ul {
+    margin: 4px 0 12px;
+}
+
+div#wrapper p {
+    margin: 0 0 4px;
 }
 
 div#wrapper table {
     border-collapse: collapse;
-    margin: 8px 0;
-}
-
-div#wrapper ul {
-    margin: 0 0 16px;
-}
-
-div#wrapper p {
-    margin: 0;
+    margin: 16px 0 0;
 }
 
 div#wrapper table > thead > tr {
